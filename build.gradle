@@ -63,6 +63,7 @@ allprojects {
             url "file://$sdkDir/extras/android/m2repository/"
         }
         google()
+        mavenLocal()
     }
 
     version = rootProject.ext.serviceVersion
