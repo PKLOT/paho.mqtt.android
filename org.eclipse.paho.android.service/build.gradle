@@ -57,8 +57,8 @@ afterEvaluate {
                 name = "GitHubPackages"
                 url = uri("https://maven.pkg.github.com/PKLOT/paho.mqtt.android")
                 credentials {
-                    username = System.getenv("GITHUB_USERNAME")
-                    password = System.getenv("GITHUB_PACKAGE_READ_PERSONAL_ACCESS_TOKEN")
+                    username = System.getenv("CI_GITHUB_USER_NAME")
+                    password = System.getenv("CI_GITHUB_PACKAGE_READ_WRITE_PERSONAL_ACCESS_TOKEN")
                 }
             }
         }
